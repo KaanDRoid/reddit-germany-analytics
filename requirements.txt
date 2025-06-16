@@ -1,0 +1,38 @@
+# Reddit Real-Time Analytics - Python Dependencies
+
+# Core Reddit API and Data Processing
+praw==7.7.1                    # Python Reddit API Wrapper
+textblob==0.17.1               # Natural Language Processing
+vaderSentiment==3.3.2          # Sentiment Analysis
+
+# Apache Spark
+pyspark==3.4.0                 # Apache Spark for Python
+
+# Data Visualization
+matplotlib==3.7.1              # Basic plotting library
+seaborn==0.12.2               # Statistical data visualization
+wordcloud==1.9.2              # Word cloud generation
+plotly==5.14.1                # Interactive visualizations
+
+# Data Manipulation
+pandas==2.0.2                 # Data manipulation and analysis
+numpy==1.24.3                 # Numerical computing
+
+# Utility Libraries
+requests==2.31.0              # HTTP library
+python-dateutil==2.8.2       # Date parsing utilities
+pytz==2023.3                  # Timezone handling
+python-dotenv==1.0.1            # .env dosyasından ortam değişkeni okuma
+
+# Jupyter Notebook Support
+jupyter==1.0.0                # Jupyter notebook
+ipykernel==6.23.1             # IPython kernel for Jupyter
+
+# Optional: Additional NLP Tools
+nltk==3.8.1                   # Natural Language Toolkit
+spacy==3.6.0                  # Advanced NLP processing
+
+# Development and Testing
+pytest==7.4.0                 # Testing framework
+flake8==6.0.0                 # Code linting
+black==23.3.0                 # Code formatting

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  reddit-analytics:
+    build: .
+    ports:
+      - "8888:8888"  # Jupyter notebook
+      - "9998:9998"  # Socket communication
+      - "4040:4040"  # Spark UI
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./checkpoint:/app/checkpoint
+    environment:
+      - SPARK_DRIVER_MEMORY=2g
+      - SPARK_EXECUTOR_MEMORY=2g
+      - PYSPARK_PYTHON=python3
+    networks:
+      - reddit-net
+
+networks:
+  reddit-net:
+    driver: bridge
